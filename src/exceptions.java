@@ -33,9 +33,7 @@ class arithmetic{
             try {
                 int j=0;
                 System.out.println(a[i] / b[i]);
-                if(j==0){
-                    throws new InsufficientFunds();
-                }
+
             }
             catch (ArithmeticException e){
                 System.out.println("problem : " + e);
@@ -46,9 +44,9 @@ class arithmetic{
             catch(ArrayIndexOutOfBoundsException e){
                 System.out.println("problem : " + e);
             }
-            catch (InsufficientFunds e){
-                System.out.println(e);
-            }
+//            catch (InsufficientFunds e){
+//                System.out.println(e);
+//            }
             catch(Exception e) {
                 System.out.println("problem : " + e);
             }
